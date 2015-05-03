@@ -20,3 +20,147 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-05-01 23:35:54.377 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-02 00:02:01.877
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-02 00:02:01.996
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\laur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-05-02 00:12:53.650 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-02 00:36:47.685
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-02 00:36:47.699
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\laur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-05-02 01:05:44.598
+!MESSAGE Publishing META-INF/context.xml configurations...
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-05-02 01:05:44.598
+!MESSAGE Could not load the context configuration for the ServerSide context due to a syntax error or other exception.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 39; Premature end of file.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.jst.server.tomcat.core.internal.xml.Factory.loadDocument(Factory.java:88)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatVersionHelper.loadCatalinaContextConfig(TomcatVersionHelper.java:614)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatVersionHelper.addCatalinaContextConfig(TomcatVersionHelper.java:565)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatVersionHelper.publishCatalinaContextConfig(TomcatVersionHelper.java:519)
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat70Configuration.publishContextConfig(Tomcat70Configuration.java:674)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishFinish(TomcatServerBehaviour.java:462)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:1011)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jst.server.core 4 0 2015-05-02 03:44:12.542
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
+
+!ENTRY org.eclipse.jst.server.core 4 0 2015-05-02 03:44:39.536
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
+
+!ENTRY org.eclipse.debug.core 4 2 2015-05-02 03:45:46.752
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.xsl.internal.debug.ui.XSLDebugUILaunchListener.launchesTerminated(XSLDebugUILaunchListener.java:64)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:318)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:270)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1055)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:405)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:577)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1187)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:431)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.debug.core 4 120 2015-05-02 03:45:46.753
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.xsl.internal.debug.ui.XSLDebugUILaunchListener.launchesTerminated(XSLDebugUILaunchListener.java:64)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:318)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:270)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1055)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:405)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:577)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1187)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:431)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-05-02 03:45:56.449
+!MESSAGE Server Apache Tomcat v7.0 -xampp at localhost failed to start.
+
+!ENTRY org.eclipse.jst.server.core 4 0 2015-05-02 03:47:39.268
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-05-02 03:47:44.300
+!MESSAGE Server Apache Tomcat v7.0 -xampp at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-05-02 03:48:42.506
+!MESSAGE Server Apache Tomcat v7.0 -xampp at localhost failed to start.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-05-02 06:11:22.979
+!MESSAGE Several ports (8005, 8080, 8443, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+!SESSION 2015-05-02 17:32:51.214 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-05-02 17:32:58.055
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-02 17:33:18.061
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-02 17:33:18.062
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\laur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
