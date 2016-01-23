@@ -44,6 +44,8 @@
 	<classpathentry kind="lib" path="D:/ase/disertatie/tools/jaxrs-ri/ext/osgi-resource-locator-1.0.1.jar"/>
 	<classpathentry kind="lib" path="D:/ase/disertatie/tools/jaxrs-ri/ext/persistence-api-1.0.jar"/>
 	<classpathentry kind="lib" path="D:/ase/disertatie/tools/jaxrs-ri/ext/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/ase/disertatie/tools/jars/jersey-multipart-1.8.jar"/>
+	<classpathentry kind="lib" path="D:/ase/disertatie/tools/jars/bcprov-jdk15on-152.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 	<referencedentry kind="lib" path="C:/javacv-0.11-bin/javacv-bin/opencv.jar" sourcepath="C:/opencv"/>
 </classpath>

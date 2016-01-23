@@ -38,5 +38,13 @@
             android:id="@+id/reg_ok_btn"
             android:layout_gravity="center_horizontal" />
 
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/reg_msg_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13" />
+
     </LinearLayout>
 </RelativeLayout>

@@ -56,7 +56,7 @@ public class FaceRecognition {
         faceRecognizer.train(images, labels);
 
         int predictedLabel = faceRecognizer.predict(testImage);
-
+        System.out.println("Picture macthes with set of pictures having the label: " + predictedLabel);
         if (predictedLabel == 1) {
         	return "1";
         } else {

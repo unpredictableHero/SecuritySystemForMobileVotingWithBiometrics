@@ -11,18 +11,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import com.example.laur.dissertationvotingapp.R;
+import com.example.laur.dissertationvotingapp.application.VotingState;
 
+import org.apache.http.message.BasicLineFormatter;
 
 
 public class MainActivity extends Activity {
 
-    EditText un,pw;
-    TextView finalResult;
-    Button reg,ok;
-    private AsyncTask<String,String,String> asyncTask;
-    private String response;
+    TextView finalResult, bottomText;
+    Button reg, lost;
+    ImageButton vote;
     private static Context context;
 
     @Override
@@ -31,18 +32,53 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
         MainActivity.context = getApplicationContext();
 
-        reg= (Button) findViewById(R.id.reg_btn);
+        reg = (Button) findViewById(R.id.reg_btn);
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(reg.getText().toString().contains("Register")) {
+                    Intent intent = new Intent();
+                    intent.setClass(context , RegisterActivity.class);
+                    startActivity(intent);
+                } else {
 
-                Intent intent = new Intent();
-                intent.setClass(context , RegisterActivity.class);
-                startActivity(intent);
+                }
+
+
+            }
+        });
+        final VotingState state = ((VotingState) getApplicationContext());
+
+        vote = (ImageButton) findViewById(R.id.vote_btn);
+        bottomText = (TextView) findViewById(R.id.mainTextViewBottom);
+        vote.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+                public void onClick(View v) {
+                String stateStr = state.getVotingState();
+                if("0".equals(stateStr)) {
+                    bottomText.setText("Your are not able to vote! The verification process for your identity failed or you already voted once");
+                } else {
+                    Intent intent = new Intent();
+                    intent.setClass(context, VoteActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
+        lost = (Button) findViewById(R.id.lostMain);
+        lost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(lost.getText().toString().contains("Lost")) {
+                    Intent intent = new Intent();
+                    intent.setClass(context , LostPhoneActivity.class);
+                    startActivity(intent);
+                } else {
 
+                }
+            }
+        });
         /*un = (EditText) findViewById(R.id.edit_username);
         pw = (EditText) findViewById(R.id.edit_pass);
         ok = (Button) findViewById(R.id.button);

@@ -20,7 +20,7 @@ import org.bytedeco.javacpp.opencv_core.MatVector;
 public class testFaceRecognition {
 
 	public static void main(String[] args) {
-		Mat testImage = imread("D:\\ase\\disertatie\\openCvPicturesTesting\\pictureOutput2.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+		Mat testImage = imread("D:\\ase\\disertatie\\openCvPicturesTesting\\pictureOutput.jpg", CV_LOAD_IMAGE_GRAYSCALE);
 
         File root = new File("D:\\ase\\disertatie\\openCvPicturesTesting\\faces");
 

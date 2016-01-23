@@ -2,6 +2,9 @@ package com.serverside.biometrics;
 
 
 
+import java.security.Security;
+
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
@@ -27,7 +30,7 @@ public static void main(String[] args)throws Exception {
     CascadeClassifier faceDetector = new CascadeClassifier();
     faceDetector.load("C:/opencv/sources/data/haarcascades/haarcascade_frontalface_alt.xml");
     
-    
+    Security.addProvider(new BouncyCastleProvider());
 	Mat image = Highgui.imread("D:\\ase\\disertatie\\openCvPicturesTesting\\download.jpg");
 	MatOfRect face_Detections = new MatOfRect();
 	faceDetector.detectMultiScale(image, face_Detections);

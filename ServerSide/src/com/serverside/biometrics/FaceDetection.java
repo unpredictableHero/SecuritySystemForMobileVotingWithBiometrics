@@ -23,12 +23,12 @@ public class FaceDetection {
 	    CascadeClassifier faceDetector = new CascadeClassifier();
 	    faceDetector.load("C:/opencv/sources/data/haarcascades/haarcascade_frontalface_alt.xml");
 	    
-	    
+	  
 	    Mat image = Highgui.imread(pathIn);
 	    
 	    MatOfRect morDetections = new MatOfRect();
 	    faceDetector.detectMultiScale(image, morDetections);
-	    System.out.println(String.format("Detected %s faces",  morDetections.toArray().length));
+	    System.out.println(String.format("Detected face on picture received from mobile device",  morDetections.toArray().length));
 	    Rect rect_Crop=null;
 	    for (Rect rect : morDetections.toArray()) {
 	    	Core.rectangle(image, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
